@@ -24,6 +24,6 @@ class Song
   end
   
   def self.artists
-    
+    artists_cleaned = @@artists.uniq
   
 end 
