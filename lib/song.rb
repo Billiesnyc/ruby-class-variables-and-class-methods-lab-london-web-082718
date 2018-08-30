@@ -27,15 +27,17 @@ class Song
     artists_cleaned = @@artists.uniq
   end
   
+ 
   def self.genre_count
-    genre_hash = { }
+    genre_count = {}
     @@genres.each do |genre|
-      if genre_hash[genre]
-        genre_hash[genres] =+ 1 
-      else genre_hash[genre] = 1
+      if genre_count[genre]
+        genre_count[genre] += 1 
+      else
+        genre_count[genre] = 1
       end
     end
-    genre_hash
+    genre_count
   end
   
   def self.artist_count 
