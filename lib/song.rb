@@ -42,7 +42,7 @@ class Song
     artist_hash = { }
     @@artists.each do |artist|
       if artist_hash.include?(artist)
-        artist_hash[artist] =+ 1 
+        artist_hash[:artist] += 1 
       else artist_hash[artist] = 1
       end
     end
