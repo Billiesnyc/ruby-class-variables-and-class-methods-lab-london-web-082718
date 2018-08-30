@@ -25,5 +25,9 @@ class Song
   
   def self.artists
     artists_cleaned = @@artists.uniq
+  end
   
+  def self.genre_count
+    
+    
 end 
